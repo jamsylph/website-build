@@ -144,4 +144,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For any questions or suggestions, please reach out via:
 - Email: your-email@example.com
 - GitHub: [jamsylph](https://github.com/jamsylph)
-- LinkedIn: [JamSylph](https://www.linkedin.com/in/jamsylph) 
+- LinkedIn: [JamSylph](https://www.linkedin.com/in/jamsylph)
