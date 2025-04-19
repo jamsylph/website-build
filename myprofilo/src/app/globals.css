@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 7, 7, 7;
+  --background-end-rgb: 0, 0, 0;
+  
+  --primary: #ff2a6d;
+  --secondary: #05d9e8;
+  --dark: #121212;
+  --darker: #070707;
+  --light: #d1f7ff;
+  --accent: #ff00ff;
+  --accent2: #01c8ee;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Rajdhani', 'Orbitron', 'Roboto Mono', monospace, sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-6 py-3 bg-[#ff2a6d] text-white font-medium rounded-md 
+           shadow-[0_0_15px_rgba(255,42,109,0.5)] transition-all 
+           hover:bg-transparent hover:shadow-[0_0_20px_rgba(255,42,109,0.7)]
+           relative overflow-hidden;
+  }
+  
+  .btn-outline {
+    @apply inline-block px-6 py-3 border-2 border-[#05d9e8] text-[#05d9e8] font-medium 
+           rounded-md transition-all hover:bg-[#05d9e8] hover:text-black
+           hover:shadow-[0_0_15px_rgba(5,217,232,0.7)];
+  }
+}

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Space | Algorithm Engineer | Multimodal AI Specialist</title>
+    <meta name="description" content="JamSylph - Algorithm Engineer and Multimodal AI Specialist. Exploring the boundaries of data, building an intelligent future.">
+    <meta name="keywords" content="algorithm engineer, multimodal, computer vision, NLP, RAG, deep learning, AI, portfolio">
+    <meta name="author" content="JamSylph">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="JamSylph - Algorithm Engineer | Multimodal AI Specialist">
+    <meta property="og:description" content="Exploring the boundaries of data, building an intelligent future">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jamsylph.top">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/jamsylph">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://github.githubassets.com/favicons/favicon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jamsylph.top">
+
+    <style>
+    /* 确保初始加载时所有项目都可见 */
+    .portfolio-item, .strength-item {
+        opacity: 1 !important; 
+        transform: translateY(0) !important;
+        display: block !important;
+        transition: opacity 0.4s ease, transform 0.4s ease !important;
+    }
+
+    /* 在JavaScript加载并执行后，这些强制样式将被覆盖 */
+    .js-loaded .portfolio-item, .js-loaded .strength-item {
+        opacity: 1;
+        transform: translateY(0);
+        display: block;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- 宇宙背景效果元素 -->
+    <div class="stars"></div>
+    <div class="nebula"></div>
+    <div class="noise"></div>
+    <div class="overlay"></div>
+    <!-- 流星效果 -->
+    <div class="shooting-star"></div>
+    
+    <!-- 随机形状星星容器 -->
+    <div class="twinkle-star-container">
+        <!-- 不同形状的星星 -->
+        <div class="twinkle-star star-circle" style="top: 15%; left: 10%; animation: twinkle 4s ease-in-out infinite;"></div>
+        <div class="twinkle-star star-pentagon" style="top: 25%; left: 85%; animation: twinkle-alt 5s ease-in-out 0.5s infinite;"></div>
+        <div class="twinkle-star star-triangle" style="top: 40%; left: 20%; animation: twinkle 6s ease-in-out 1s infinite;"></div>
+        <div class="twinkle-star star-hexagon" style="top: 10%; left: 60%; animation: twinkle-alt 4.5s ease-in-out 1.5s infinite;"></div>
+        <div class="twinkle-star star-circle" style="top: 75%; left: 15%; animation: twinkle 5s ease-in-out 2s infinite;"></div>
+        <div class="twinkle-star star-pentagon" style="top: 65%; left: 90%; animation: twinkle-alt 4s ease-in-out 2.5s infinite;"></div>
+        <div class="twinkle-star star-triangle" style="top: 85%; left: 35%; animation: twinkle 5.5s ease-in-out 3s infinite;"></div>
+        <div class="twinkle-star star-hexagon" style="top: 5%; left: 40%; animation: twinkle-alt 3.5s ease-in-out 1.5s infinite;"></div>
+        <!-- 添加一些大一点的星星作为重点 -->
+        <div class="twinkle-star star-pentagon" style="top: 30%; left: 70%; width: 15px; height: 15px; animation: twinkle 7s ease-in-out 0.7s infinite;"></div>
+        <div class="twinkle-star star-hexagon" style="top: 60%; left: 25%; width: 12px; height: 12px; animation: twinkle-alt 6s ease-in-out 2.2s infinite;"></div>
+    </div>
+    
+    <header>
+        <nav>
+            <div class="logo">JL</div>
+            <div class="nav-links">
+                <a href="#" class="active" data-en="Home" data-zh="主页">Home</a>
+                <a href="#about" data-en="About" data-zh="关于">About</a>
+                <a href="#core-strengths" data-en="Core Strengths" data-zh="核心优势">Core Strengths</a>
+                <a href="#portfolio" data-en="Portfolio" data-zh="作品集">Portfolio</a>
+                <a href="#skills" data-en="Skills" data-zh="技能">Skills</a>
+                <a href="#projects" data-en="Projects" data-zh="项目">Projects</a>
+                <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+            </div>
+            <div class="header-controls">
+                <div class="language-toggle">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="zh">中</span>
+                </div>
+                <!-- 主题切换按钮已移除，强制使用黑夜模式 -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-en="China · GMT+8" data-zh="中国 · GMT+8">China · GMT+8</span>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-text">
+                    <h1 class="glitch" data-text="JamSylph">JamSylph</h1>
+                    <h2 data-en="Algorithm Engineer | Multimodal AI Specialist" data-zh="算法工程师 | 多模态AI专家">Algorithm Engineer | Multimodal AI Specialist</h2>
+                    <p class="bio" data-en="Specializing in computer vision and NLP, crafting intelligent systems that understand multimodal data" data-zh="专注于计算机视觉和自然语言处理，构建能理解多模态数据的智能系统">Specializing in computer vision and NLP, crafting intelligent systems that understand multimodal data</p>
+                    <div class="cta-buttons">
+                        <a href="#about" class="btn primary" data-en="Learn More" data-zh="了解更多">Learn More</a>
+                        <a href="#contact" class="btn outline" data-en="Contact Me" data-zh="联系我">Contact Me</a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <div class="avatar-container">
+                        <div class="avatar-outline"></div>
+                        <div class="avatar">
+                            <!-- 头像将在CSS中设置为背景 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="With an economics background and four years of experience in algorithm engineering, I've expanded my expertise from data analysis to computer vision and multimodal systems. Starting as a market researcher and data analyst in 2021, I quickly pivoted to computer vision algorithms and have been developing innovative AI solutions for real-world applications. My unique background combines data-driven insights with technical implementation, allowing me to develop algorithms that deliver both technical excellence and business value." data-zh="拥有经济学背景和四年算法工程经验，我已将专业知识从数据分析扩展到计算机视觉和多模态系统。2021年起步于市场研究和数据分析，我迅速转向计算机视觉算法领域，一直致力于为实际应用开发创新的AI解决方案。我独特的背景将数据驱动的洞察与技术实现相结合，使我能够开发出既具技术卓越性又具商业价值的算法。">With an economics background and four years of experience in algorithm engineering, I've expanded my expertise from data analysis to computer vision and multimodal systems. Starting as a market researcher and data analyst in 2021, I quickly pivoted to computer vision algorithms and have been developing innovative AI solutions for real-world applications. My unique background combines data-driven insights with technical implementation, allowing me to develop algorithms that deliver both technical excellence and business value.</p>
+                    
+                    <div class="journey-highlight">
+                        <h3 data-en="My Journey" data-zh="我的职业旅程">My Journey</h3>
+                        <p data-en="After graduating with an economics degree in 2021, I began my career in market research and data analysis. Fascinated by the potential of AI, I transitioned to algorithm engineering with a focus on computer vision. My non-traditional background gave me a unique perspective on applying technical solutions to business problems. Over the years, I've developed expertise in building production-ready computer vision systems, and recently expanded into NLP and multimodal AI applications, implementing RAG systems with cutting-edge models like DeepSeek's R1." data-zh="2021年获得经济学学位后，我开始了市场研究和数据分析的职业生涯。受AI潜力的吸引，我转向了算法工程，专注于计算机视觉。非传统的背景使我对将技术解决方案应用于商业问题有独特的视角。多年来，我在构建可投入生产的计算机视觉系统方面积累了丰富经验，最近还扩展到自然语言处理和多模态AI应用，使用DeepSeek R1等前沿模型实现RAG系统。">After graduating with an economics degree in 2021, I began my career in market research and data analysis. Fascinated by the potential of AI, I transitioned to algorithm engineering with a focus on computer vision. My non-traditional background gave me a unique perspective on applying technical solutions to business problems. Over the years, I've developed expertise in building production-ready computer vision systems, and recently expanded into NLP and multimodal AI applications, implementing RAG systems with cutting-edge models like DeepSeek's R1.</p>
+                    </div>
+                    
+                    <div class="persona-circles">
+                        <div class="persona-circle active" data-persona="algorithm">
+                            <div class="circle-icon"><i class="fas fa-code"></i></div>
+                            <span data-en="Algorithm" data-zh="算法开发">Algorithm</span>
+                        </div>
+                        <div class="persona-circle" data-persona="data">
+                            <div class="circle-icon"><i class="fas fa-database"></i></div>
+                            <span data-en="Data" data-zh="数据科学">Data</span>
+                        </div>
+                        <div class="persona-circle" data-persona="innovation">
+                            <div class="circle-icon"><i class="fas fa-lightbulb"></i></div>
+                            <span data-en="Innovation" data-zh="创新思维">Innovation</span>
+                        </div>
+                        <div class="persona-circle" data-persona="research">
+                            <div class="circle-icon"><i class="fas fa-microscope"></i></div>
+                            <span data-en="Research" data-zh="学术研究">Research</span>
+                        </div>
+                    </div>
+                    
+                    <div class="persona-content">
+                        <div class="persona-item active" id="algorithm-content">
+                            <p data-en="As an algorithm engineer, I develop and implement advanced machine learning models to solve complex problems. My expertise includes deep neural networks, reinforcement learning, and optimization algorithms. I specialize in transforming research concepts into efficient, production-ready code that can handle real-world challenges at scale. My work in computer vision and AI architectures has led to systems that achieve state-of-the-art performance while remaining computationally efficient." data-zh="作为算法工程师，我专注于开发和实现先进的机器学习模型来解决复杂问题。我的专业知识涵盖深度神经网络、强化学习和优化算法。我擅长将研究概念转化为高效、可投入生产的代码，能够大规模应对现实世界的挑战。我在计算机视觉和AI架构方面的工作已开发出多个系统，这些系统在保持计算效率的同时达到了最先进的性能水平。">As an algorithm engineer, I develop and implement advanced machine learning models to solve complex problems. My expertise includes deep neural networks, reinforcement learning, and optimization algorithms. I specialize in transforming research concepts into efficient, production-ready code that can handle real-world challenges at scale. My work in computer vision and AI architectures has led to systems that achieve state-of-the-art performance while remaining computationally efficient.</p>
+                        </div>
+                        <div class="persona-item" id="data-content">
+                            <p data-en="With a strong foundation in data science, I transform raw data into valuable insights and actionable intelligence. My approach combines statistical rigor with practical business understanding, allowing me to identify patterns that matter. I've developed expertise in data preprocessing pipelines, feature engineering for machine learning, and building predictive models that drive decision-making. I'm particularly skilled in Retrieval-Augmented Generation (RAG) techniques and designing data architectures that enable AI systems to access and utilize knowledge effectively." data-zh="凭借扎实的数据科学基础，我能将原始数据转化为有价值的洞察和可执行的情报。我的方法将严谨的统计分析与实用的商业理解相结合，使我能够识别真正重要的模式。我在数据预处理流程、机器学习特征工程以及构建驱动决策的预测模型方面积累了丰富经验。我特别擅长检索增强生成（RAG）技术，以及设计能使AI系统有效获取和利用知识的数据架构。">With a strong foundation in data science, I transform raw data into valuable insights and actionable intelligence. My approach combines statistical rigor with practical business understanding, allowing me to identify patterns that matter. I've developed expertise in data preprocessing pipelines, feature engineering for machine learning, and building predictive models that drive decision-making. I'm particularly skilled in Retrieval-Augmented Generation (RAG) techniques and designing data architectures that enable AI systems to access and utilize knowledge effectively.</p>
+                        </div>
+                        <div class="persona-item" id="innovation-content">
+                            <p data-en="I thrive on pushing the boundaries of what's possible and finding novel solutions to challenging problems. My approach to innovation is both systematic and creative - I start by deeply understanding the problem space, then explore unconventional approaches that might yield breakthroughs. I believe in rapid prototyping and iterative development to test ideas quickly and refine them based on real feedback. Some of my most successful projects have come from combining techniques across different domains or applying established methods in new contexts. I'm particularly interested in innovations that make AI more transparent, efficient, and accessible." data-zh="我擅长突破可能性的边界，为挑战性问题寻找创新解决方案。我的创新方法兼具系统性和创造性——首先深入理解问题领域，然后探索可能带来突破的非常规方法。我信奉快速原型开发和迭代改进，通过实际反馈快速测试和完善想法。我最成功的一些项目源于跨领域技术的结合，或在新环境中应用已有方法。我特别关注能使AI更加透明、高效和易于使用的创新技术。">I thrive on pushing the boundaries of what's possible and finding novel solutions to challenging problems. My approach to innovation is both systematic and creative - I start by deeply understanding the problem space, then explore unconventional approaches that might yield breakthroughs. I believe in rapid prototyping and iterative development to test ideas quickly and refine them based on real feedback. Some of my most successful projects have come from combining techniques across different domains or applying established methods in new contexts. I'm particularly interested in innovations that make AI more transparent, efficient, and accessible.</p>
+                        </div>
+                        <div class="persona-item" id="research-content">
+                            <p data-en="I maintain a strong connection to industry innovations while focusing on practical applications. I regularly follow the latest developments in machine learning and contribute to projects through robust implementations and open-source collaborations. My technical interests include algorithm optimization, deployment efficiency, and creating systems that are both powerful and maintainable. I believe that combining industry best practices with cutting-edge approaches is essential for developing truly valuable solutions. I enjoy the challenge of transforming complex technical concepts into practical tools that create real business impact." data-zh="我在专注于实际应用的同时，与行业创新保持紧密联系。我定期关注机器学习领域的最新发展，并通过稳健的实现和开源协作为项目做出贡献。我的技术兴趣包括算法优化、部署效率和创建既强大又可维护的系统。我相信，将行业最佳实践与前沿方法相结合对于开发真正有价值的解决方案至关重要。我享受将复杂技术概念转化为能创造真实业务影响的实用工具的挑战。">I maintain a strong connection to industry innovations while focusing on practical applications. I regularly follow the latest developments in machine learning and contribute to projects through robust implementations and open-source collaborations. My technical interests include algorithm optimization, deployment efficiency, and creating systems that are both powerful and maintainable. I believe that combining industry best practices with cutting-edge approaches is essential for developing truly valuable solutions. I enjoy the challenge of transforming complex technical concepts into practical tools that create real business impact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="philosophy-section">
+                        <h3 data-en="My Philosophy" data-zh="我的技术理念">My Philosophy</h3>
+                        <p data-en="I believe that technology should serve humanity by making our lives better, more productive, and more meaningful. My work is guided by a commitment to developing AI that is ethical, transparent, and accessible. I'm particularly interested in applications that have positive social impact, whether by making expert knowledge more available, automating tedious tasks, or providing new insights that weren't previously possible." data-zh="我坚信技术应该通过使我们的生活更美好、更高效和更有意义来服务人类。我的工作以开发符合伦理、透明和易于获取的AI为指导原则。我特别关注那些能产生积极社会影响的应用，无论是通过使专业知识更易获取，自动化繁琐任务，还是提供前所未有的新见解。">I believe that technology should serve humanity by making our lives better, more productive, and more meaningful. My work is guided by a commitment to developing AI that is ethical, transparent, and accessible. I'm particularly interested in applications that have positive social impact, whether by making expert knowledge more available, automating tedious tasks, or providing new insights that weren't previously possible.</p>
+                    </div>
+                    
+                    <div class="metrics">
+                        <div class="metric">
+                            <span class="value">30+</span>
+                            <span class="label" data-en="Technical Solutions" data-zh="技术解决方案">Technical Solutions</span>
+                        </div>
+                        <div class="metric">
+                            <span class="value">20+</span>
+                            <span class="label" data-en="Completed Projects" data-zh="已完成项目">Completed Projects</span>
+                        </div>
+                        <div class="metric">
+                            <span class="value">4+</span>
+                            <span class="label" data-en="Years Experience" data-zh="年专业经验">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="globe-container">
+                    <canvas id="globe"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="core-strengths" class="core-strengths">
+            <h2 class="section-title" data-en="Core Strengths" data-zh="核心专长">Core Strengths</h2>
+            <div class="strengths-container">
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 data-en="Computer Vision Expertise" data-zh="计算机视觉专长">Computer Vision Expertise</h3>
+                    <p data-en="Four years of professional experience developing and optimizing computer vision algorithms for real-world applications." data-zh="四年专业经验，开发和优化用于实际应用的计算机视觉算法。">Four years of professional experience developing and optimizing computer vision algorithms for real-world applications.</p>
+                </div>
+                
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-en="NLP & RAG Implementation" data-zh="自然语言处理与RAG实现">NLP & RAG Implementation</h3>
+                    <p data-en="Specialized in Retrieval-Augmented Generation using DeepSeek models to create context-aware AI systems." data-zh="专注于使用DeepSeek模型的检索增强生成技术，创建具有上下文感知的AI系统。">Specialized in Retrieval-Augmented Generation using DeepSeek models to create context-aware AI systems.</p>
+                </div>
+                
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-en="Predictive Modeling" data-zh="预测建模">Predictive Modeling</h3>
+                    <p data-en="Background in economic forecasting and GM(1,1) gray prediction models, bringing quantitative analysis to AI solutions." data-zh="具有经济预测和GM(1,1)灰色预测模型背景，为AI解决方案带来定量分析。">Background in economic forecasting and GM(1,1) gray prediction models, bringing quantitative analysis to AI solutions.</p>
+                </div>
+                
+                <div class="strength-item">
+                    <div class="strength-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 data-en="Multimodal Integration" data-zh="多模态集成">Multimodal Integration</h3>
+                    <p data-en="Skilled at combining computer vision and NLP techniques to create comprehensive AI systems that understand diverse data types." data-zh="擅长结合计算机视觉和自然语言处理技术，创建能理解多种数据类型的综合AI系统。">Skilled at combining computer vision and NLP techniques to create comprehensive AI systems that understand diverse data types.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2 class="section-title" data-en="Portfolio Showcase" data-zh="作品集展示">Portfolio Showcase</h2>
+            
+            <div class="portfolio-container">
+                <div class="featured-work">
+                    <div class="featured-work-text">
+                        <h3 class="featured-title" data-en="Featured Work" data-zh="精选作品">Featured Work</h3>
+                        <p class="featured-description" data-en="A selection of my most impactful projects and contributions across computer vision, NLP, and multimodal AI systems." data-zh="我在计算机视觉、自然语言处理和多模态AI系统领域最具影响力的项目和贡献精选。">A selection of my most impactful projects and contributions across computer vision, NLP, and multimodal AI systems.</p>
+                    </div>
+                    <div class="portfolio-toggle">
+                        <button class="portfolio-tab active" data-target="all" data-en="All" data-zh="全部">All</button>
+                        <button class="portfolio-tab" data-target="cv" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</button>
+                        <button class="portfolio-tab" data-target="nlp" data-en="NLP & LLMs" data-zh="自然语言处理和大语言模型">NLP & LLMs</button>
+                        <button class="portfolio-tab" data-target="multi" data-en="Multimodal AI" data-zh="多模态AI">Multimodal AI</button>
+                        <button class="portfolio-tab" data-target="research" data-en="Research" data-zh="研究">Research</button>
+                    </div>
+                </div>
+
+                <!-- 新的轮播组件 -->
+                <div class="portfolio-carousel">
+                    <div class="portfolio-track">
+                        <!-- 轮播幻灯片1 - Computer Vision -->
+                        <div class="portfolio-slide active" data-category="cv">
+                            <div class="portfolio-slide-group">
+                                <!-- 项目卡片1 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                                        <h3 class="portfolio-card-title" data-en="Industrial Defect Detection System" data-zh="工业缺陷检测系统">Industrial Defect Detection System</h3>
+                                        <p class="portfolio-card-description" data-en="Led the development of a high-precision computer vision system for detecting manufacturing defects, implemented across multiple production lines to enhance quality control processes." data-zh="领导开发了一个高精度的计算机视觉系统，用于检测制造缺陷，在多条生产线上实施以增强质量控制流程。">Led the development of a high-precision computer vision system for detecting manufacturing defects, implemented across multiple production lines to enhance quality control processes.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">99.2%</span>
+                                                <span class="portfolio-metric-label" data-en="Detection Accuracy" data-zh="检测精度">Detection Accuracy</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">2023</span>
+                                                <span class="portfolio-metric-label" data-en="Deployment Year" data-zh="部署年份">Deployment Year</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="View Case Study" data-zh="查看案例研究">View Case Study <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- 项目卡片2 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                                        <h3 class="portfolio-card-title" data-en="Aerial Solar Panel Inspection System" data-zh="无人机光伏缺陷检测系统">Aerial Solar Panel Inspection System</h3>
+                                        <p class="portfolio-card-description" data-en="Developed an autonomous drone-based inspection system for detecting defects in solar panel arrays using computer vision, employing YOLO object detection optimized for edge computing on drone hardware." data-zh="开发了一个基于无人机的自主检测系统，使用计算机视觉检测太阳能电池板阵列中的缺陷，采用针对无人机硬件优化的YOLO目标检测技术。">Developed an autonomous drone-based inspection system for detecting defects in solar panel arrays using computer vision, employing YOLO object detection optimized for edge computing on drone hardware.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">96.5%</span>
+                                                <span class="portfolio-metric-label" data-en="Detection Accuracy" data-zh="检测精度">Detection Accuracy</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">80%</span>
+                                                <span class="portfolio-metric-label" data-en="Time Reduction" data-zh="时间节省">Time Reduction</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="View Project" data-zh="查看项目">View Project <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- 项目卡片3 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                                        <h3 class="portfolio-card-title" data-en="Autonomous Vehicle Perception System" data-zh="自动驾驶感知系统">Autonomous Vehicle Perception System</h3>
+                                        <p class="portfolio-card-description" data-en="Developed a multi-modal perception system that fuses data from cameras, LiDAR, and radar to create a comprehensive understanding of the vehicle's surroundings in real-time." data-zh="开发了一个多模态感知系统，融合来自摄像头、激光雷达和雷达的数据，实时创建对车辆周围环境的全面理解。">Developed a multi-modal perception system that fuses data from cameras, LiDAR, and radar to create a comprehensive understanding of the vehicle's surroundings in real-time.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">98.7%</span>
+                                                <span class="portfolio-metric-label" data-en="Detection Accuracy" data-zh="检测精度">Detection Accuracy</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">12ms</span>
+                                                <span class="portfolio-metric-label" data-en="Processing Time" data-zh="处理时间">Processing Time</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="View Case Study" data-zh="查看案例研究">View Case Study <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 轮播幻灯片2 - NLP & LLMs -->
+                        <div class="portfolio-slide" data-category="nlp research">
+                            <div class="portfolio-slide-group">
+                                <!-- 项目卡片4 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="NLP & LLMs" data-zh="自然语言处理和大语言模型">NLP & LLMs</span>
+                                        <h3 class="portfolio-card-title" data-en="DeepSeek R1 RAG Implementation" data-zh="DeepSeek R1 RAG实现">DeepSeek R1 RAG Implementation</h3>
+                                        <p class="portfolio-card-description" data-en="Developed a domain-specific RAG system using DeepSeek's R1 model that integrates specialized knowledge bases to enhance context awareness and reduce hallucinations in generative AI responses." data-zh="使用DeepSeek的R1模型开发了特定领域的RAG系统，集成专业知识库以增强上下文感知能力并减少生成式AI回复中的幻觉问题。">Developed a domain-specific RAG system using DeepSeek's R1 model that integrates specialized knowledge bases to enhance context awareness and reduce hallucinations in generative AI responses.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">45%</span>
+                                                <span class="portfolio-metric-label" data-en="Factual Improvement" data-zh="事实准确性提升">Factual Improvement</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">2024</span>
+                                                <span class="portfolio-metric-label" data-en="Implementation Year" data-zh="实现年份">Implementation Year</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="Explore Project" data-zh="探索项目">Explore Project <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- 项目卡片5 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="NLP & LLMs / Research" data-zh="自然语言处理和大语言模型 / 研究">NLP & LLMs / Research</span>
+                                        <h3 class="portfolio-card-title" data-en="Llama-3-7B Model Fine-tuning" data-zh="Llama-3-7B模型微调">Llama-3-7B Model Fine-tuning</h3>
+                                        <p class="portfolio-card-description" data-en="Successfully reproduced and fine-tuned Meta's Llama-3-7B model for specialized industrial applications using parameter-efficient techniques." data-zh="成功复现并使用参数高效的技术对Meta的Llama-3-7B模型进行微调，以适应专业工业应用。">Successfully reproduced and fine-tuned Meta's Llama-3-7B model for specialized industrial applications using parameter-efficient techniques. Created a custom evaluation framework for measuring hallucination rates and factual accuracy in industrial contexts.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">37%</span>
+                                                <span class="portfolio-metric-label" data-en="Domain Performance Gain" data-zh="领域性能提升">Domain Performance Gain</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">4-bit</span>
+                                                <span class="portfolio-metric-label" data-en="Quantization Level" data-zh="量化等级">Quantization Level</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="View Research" data-zh="查看研究">View Research <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 轮播幻灯片3 - Multimodal & Research -->
+                        <div class="portfolio-slide" data-category="multi research">
+                            <div class="portfolio-slide-group">
+                                <!-- 项目卡片6 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Multimodal AI" data-zh="多模态人工智能">Multimodal AI</span>
+                                        <h3 class="portfolio-card-title" data-en="Vision-Language Manufacturing Assistant" data-zh="视觉语言制造助手">Vision-Language Manufacturing Assistant</h3>
+                                        <p class="portfolio-card-description" data-en="Designed an integrated multimodal system that combines visual inspection with language processing to provide real-time assistance for manufacturing operations." data-zh="设计了一个集成的多模态系统，结合视觉检测和语言处理，为制造操作提供实时支持。">Designed an integrated multimodal system that combines visual inspection with language processing to provide real-time assistance for manufacturing operations, enhancing both efficiency and accuracy.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">32%</span>
+                                                <span class="portfolio-metric-label" data-en="Efficiency Increase" data-zh="效率提升">Efficiency Increase</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">2024</span>
+                                                <span class="portfolio-metric-label" data-en="Implementation Year" data-zh="实现年份">Implementation Year</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="See Demo" data-zh="查看演示">See Demo <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- 项目卡片7 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Multimodal AI" data-zh="多模态人工智能">Multimodal AI</span>
+                                        <h3 class="portfolio-card-title" data-en="Multimodal Sensor Fusion System" data-zh="多模态传感器融合系统">Multimodal Sensor Fusion System</h3>
+                                        <p class="portfolio-card-description" data-en="Pioneered a multimodal approach to quality inspection by fusing data from visual, thermal, and acoustic sensors." data-zh="通过融合视觉、热成像和声学传感器数据，开创了质量检测的多模态方法。">Pioneered a multimodal approach to quality inspection by fusing data from visual, thermal, and acoustic sensors. Developed custom neural architectures to integrate heterogeneous inputs for detecting complex defects not visible through a single modality.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">42%</span>
+                                                <span class="portfolio-metric-label" data-en="Internal Defect Detection" data-zh="内部缺陷检测">Internal Defect Detection</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">28%</span>
+                                                <span class="portfolio-metric-label" data-en="Testing Reduction" data-zh="测试减少">Testing Reduction</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="View Project" data-zh="查看项目">View Project <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                                
+                                <!-- 项目卡片8 -->
+                                <div class="portfolio-card">
+                                    <div class="portfolio-card-content">
+                                        <span class="portfolio-card-tag" data-en="Economic Analysis / Research" data-zh="经济分析 / 研究">Economic Analysis / Research</span>
+                                        <h3 class="portfolio-card-title" data-en="GM(1,1) Prediction Model for Manufacturing" data-zh="制造业灰色预测模型">GM(1,1) Prediction Model</h3>
+                                        <p class="portfolio-card-description" data-en="Academic research applying the GM(1,1) gray prediction model to accurately forecast manufacturer income and production metrics under uncertain market conditions." data-zh="学术研究将GM(1,1)灰色预测模型应用于准确预测不确定市场条件下的制造商收入和生产指标。">Academic research applying the GM(1,1) gray prediction model to accurately forecast manufacturer income and production metrics under uncertain market conditions, demonstrating the value of AI techniques in economic forecasting.</p>
+                                        <div class="portfolio-metrics">
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">91%</span>
+                                                <span class="portfolio-metric-label" data-en="Prediction Accuracy" data-zh="预测准确性">Prediction Accuracy</span>
+                                            </div>
+                                            <div class="portfolio-metric-item">
+                                                <span class="portfolio-metric-value">2021</span>
+                                                <span class="portfolio-metric-label" data-en="Publication Year" data-zh="发表年份">Publication Year</span>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="portfolio-card-link" data-en="Read Research" data-zh="阅读研究">Read Research <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 轮播控制器 -->
+                    <div class="portfolio-controls">
+                        <button class="portfolio-control-btn prev-button">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="portfolio-control-btn next-button">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- 轮播指示器 -->
+                    <div class="portfolio-indicators">
+                        <span class="portfolio-indicator active" data-index="0"></span>
+                        <span class="portfolio-indicator" data-index="1"></span>
+                        <span class="portfolio-indicator" data-index="2"></span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-cta">
+                    <a href="https://github.com/jamsylph" class="btn primary" target="_blank" data-en="View Full Portfolio" data-zh="查看完整作品集">View Full Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title" data-en="Skills & Knowledge Graph" data-zh="技能与知识图谱">Skills & Knowledge Graph</h2>
+            <p class="section-description" data-en="My skills represented as an interconnected knowledge graph showing relationships between different domains of expertise" data-zh="我的技能以互联知识图谱的形式展示，显示不同专业领域之间的关系">
+                My skills represented as an interconnected knowledge graph showing relationships between different domains of expertise
+            </p>
+            
+            <!-- Knowledge Graph Properties -->
+            <div class="knowledge-properties">
+                <div class="property-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 data-en="Interconnected" data-zh="互联">Interconnected</h3>
+                    <p data-en="Skills that work together across domains" data-zh="跨领域协同工作的技能">Skills that work together across domains</p>
+                </div>
+                <div class="property-item">
+                    <i class="fas fa-layer-group"></i>
+                    <h3 data-en="Depth" data-zh="深度">Depth</h3>
+                    <p data-en="Specialized expertise in key areas" data-zh="关键领域的专业知识">Specialized expertise in key areas</p>
+                </div>
+                <div class="property-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3 data-en="Adaptable" data-zh="适应性">Adaptable</h3>
+                    <p data-en="Continuously evolving skillset" data-zh="不断发展的技能组合">Continuously evolving skillset</p>
+                </div>
+            </div>
+            
+            <!-- Knowledge Graph Container -->
+            <div class="knowledge-tree-container knowledge-graph">
+                <!-- Core Node: Central skill hub -->
+                <div id="core-node" class="knowledge-node core-node entity-node">
+                    <div class="node-icon"><i class="fas fa-brain"></i></div>
+                    <span class="node-label" data-en="AI & ML" data-zh="人工智能和机器学习">AI & ML</span>
+                    <div class="node-pulse"></div>
+                </div>
+                
+                <!-- Primary Branches: Main skill categories -->
+                <div class="knowledge-branch branch-vision">
+                    <div class="knowledge-node primary-node entity-node" id="vision-node">
+                        <div class="node-icon"><i class="fas fa-eye"></i></div>
+                        <span class="node-label" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="knowledge-branch branch-nlp">
+                    <div class="knowledge-node primary-node entity-node" id="nlp-node">
+                        <div class="node-icon"><i class="fas fa-comment-alt"></i></div>
+                        <span class="node-label" data-en="Natural Language Processing" data-zh="自然语言处理">Natural Language Processing</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="knowledge-branch branch-multimodal">
+                    <div class="knowledge-node primary-node entity-node" id="multimodal-node">
+                        <div class="node-icon"><i class="fas fa-bezier-curve"></i></div>
+                        <span class="node-label" data-en="Multimodal AI" data-zh="多模态AI">Multimodal AI</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+
+                <div class="knowledge-branch branch-tools">
+                    <div class="knowledge-node primary-node entity-node" id="tools-node">
+                        <div class="node-icon"><i class="fas fa-tools"></i></div>
+                        <span class="node-label" data-en="Tools & Economics" data-zh="工具与经济学">Tools & Economics</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+
+                <!-- SVG Connections (Relationships) -->
+                <div class="knowledge-connections">
+                    <svg class="connections-svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+                        <!-- Core to Domain connections -->
+                        <path class="connection-path core-to-vision" d="M500,350 L250,175" stroke-dasharray="400" stroke-dashoffset="400"></path>
+                        <path class="connection-path core-to-nlp" d="M500,350 L750,175" stroke-dasharray="400" stroke-dashoffset="400"></path>
+                        <path class="connection-path core-to-multimodal" d="M500,350 L250,525" stroke-dasharray="400" stroke-dashoffset="400"></path>
+                        <path class="connection-path core-to-tools" d="M500,350 L750,525" stroke-dasharray="400" stroke-dashoffset="400"></path>
+                        
+                        <!-- Cross-domain connections (relationships) -->
+                        <path class="connection-path vision-to-nlp" d="M250,175 Q500,175 750,175" stroke-dasharray="500" stroke-dashoffset="500"></path>
+                        <path class="connection-path vision-to-multimodal" d="M250,175 Q250,350 250,525" stroke-dasharray="500" stroke-dashoffset="500"></path>
+                        <path class="connection-path nlp-to-multimodal" d="M750,175 Q500,350 250,525" stroke-dasharray="800" stroke-dashoffset="800"></path>
+                        <path class="connection-path nlp-to-tools" d="M750,175 Q750,350 750,525" stroke-dasharray="500" stroke-dashoffset="500"></path>
+                        <path class="connection-path multimodal-to-tools" d="M250,525 Q500,525 750,525" stroke-dasharray="500" stroke-dashoffset="500"></path>
+                    </svg>
+                    
+                    <!-- Particle effects along connections -->
+                    <div class="connection-particles"></div>
+                </div>
+
+                <!-- Knowledge Details (expanded on click) -->
+                <!-- Core Skills Detail -->
+                <div class="knowledge-leaf leaf-core" data-parent="core-node">
+                    <h3 class="leaf-title" data-en="AI & Machine Learning" data-zh="人工智能与机器学习">AI & Machine Learning</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <span data-en="Machine Learning" data-zh="机器学习">Machine Learning</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <span data-en="Deep Learning" data-zh="深度学习">Deep Learning</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <span data-en="Python" data-zh="Python">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <span data-en="Data Science" data-zh="数据科学">Data Science</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                        <span data-en="TensorFlow/PyTorch" data-zh="TensorFlow/PyTorch">TensorFlow/PyTorch</span>
+                    </div>
+                </div>
+                
+                <!-- Computer Vision Skills -->
+                <div class="knowledge-leaf leaf-vision" data-parent="vision-node">
+                    <h3 class="leaf-title" data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <span data-en="OpenCV" data-zh="OpenCV">OpenCV</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <span data-en="PyTorch Vision" data-zh="PyTorch Vision">PyTorch Vision</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-camera"></i></div>
+                        <span data-en="Object Detection" data-zh="目标检测">Object Detection</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-image"></i></div>
+                        <span data-en="Image Segmentation" data-zh="图像分割">Image Segmentation</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <span data-en="Visual Inspection" data-zh="视觉检测">Visual Inspection</span>
+                    </div>
+                </div>
+                
+                <!-- NLP Skills -->
+                <div class="knowledge-leaf leaf-nlp" data-parent="nlp-node">
+                    <h3 class="leaf-title" data-en="Natural Language Processing" data-zh="自然语言处理">Natural Language Processing</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                        <span data-en="DeepSeek Models" data-zh="DeepSeek模型">DeepSeek Models</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <span data-en="RAG Systems" data-zh="RAG系统">RAG Systems</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                        <span data-en="Knowledge Graphs" data-zh="知识图谱">Knowledge Graphs</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span data-en="Vector Databases" data-zh="向量数据库">Vector Databases</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <span data-en="Semantic Search" data-zh="语义搜索">Semantic Search</span>
+                    </div>
+                </div>
+                
+                <!-- Multimodal Skills -->
+                <div class="knowledge-leaf leaf-multimodal" data-parent="multimodal-node">
+                    <h3 class="leaf-title" data-en="Multimodal AI Integration" data-zh="多模态AI集成">Multimodal AI Integration</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-arrows-alt-h"></i></div>
+                        <span data-en="Cross-Modal Learning" data-zh="跨模态学习">Cross-Modal Learning</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                        <span data-en="Multi-Task Models" data-zh="多任务模型">Multi-Task Models</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-tag"></i></div>
+                        <span data-en="Feature Fusion" data-zh="特征融合">Feature Fusion</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-bezier-curve"></i></div>
+                        <span data-en="Modal Alignment" data-zh="模态对齐">Modal Alignment</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <span data-en="Domain Adaptation" data-zh="领域适应">Domain Adaptation</span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Economics Skills -->
+                <div class="knowledge-leaf leaf-tools" data-parent="tools-node">
+                    <h3 class="leaf-title" data-en="Tools & Economics" data-zh="工具与经济学">Tools & Economics</h3>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <span data-en="GM(1,1) Models" data-zh="灰色预测模型">GM(1,1) Models</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-industry"></i></div>
+                        <span data-en="Manufacturing Analysis" data-zh="制造业分析">Manufacturing Analysis</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <span data-en="Docker/K8s" data-zh="Docker/K8s">Docker/K8s</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-github"></i></div>
+                        <span data-en="Git/GitHub" data-zh="Git/GitHub">Git/GitHub</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-flask"></i></div>
+                        <span data-en="MLOps" data-zh="MLOps">MLOps</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legend -->
+            <div class="knowledge-tree-legend">
+                <div class="legend-item">
+                    <div class="legend-color core-color"></div>
+                    <span data-en="Core AI & ML" data-zh="核心AI与ML">Core AI & ML</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color vision-color"></div>
+                    <span data-en="Computer Vision" data-zh="计算机视觉">Computer Vision</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color nlp-color"></div>
+                    <span data-en="NLP" data-zh="自然语言处理">NLP</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color multimodal-color"></div>
+                    <span data-en="Multimodal AI" data-zh="多模态AI">Multimodal AI</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color tools-color"></div>
+                    <span data-en="Tools & Economics" data-zh="工具与经济学">Tools & Economics</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-en="Projects" data-zh="项目">Projects</h2>
+                
+                <!-- 新的项目轮播器 -->
+                <div class="project-carousel-container">
+                    <div class="project-carousel">
+                        <!-- 项目轮播内容 -->
+                        <div class="project-slide active" id="project1">
+                            <div class="project-slide-content">
+                                <div class="project-slide-info">
+                                    <div class="project-slide-header">
+                                        <div class="project-slide-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <h3 class="project-slide-title" data-en="DeepSeek RAG Knowledge Assistant" data-zh="DeepSeek RAG 知识助手">DeepSeek RAG Knowledge Assistant</h3>
+                                    </div>
+                                    <div class="project-slide-description" data-en="An enterprise knowledge assistant built using DeepSeek R1 model with RAG (Retrieval-Augmented Generation) architecture for accurate and context-aware responses to company-specific queries." data-zh="使用DeepSeek R1模型和RAG（检索增强生成）架构构建的企业知识助手，可对公司特定查询提供准确且上下文感知的响应。">
+                                        An enterprise knowledge assistant built using DeepSeek R1 model with RAG (Retrieval-Augmented Generation) architecture for accurate and context-aware responses to company-specific queries.
+                                    </div>
+                                    <div class="project-slide-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">DeepSeek R1</span>
+                                        <span class="tech-tag">RAG</span>
+                                    </div>
+                                    <div class="project-slide-links">
+                                        <a href="https://github.com/yourusername/deepseek-rag" class="btn outline" target="_blank" data-en="View Project" data-zh="查看项目">View Project</a>
+                                    </div>
+                                </div>
+                                <div class="project-slide-visual">
+                                    <div class="project-visual-content">
+                                        <div class="code-snippet">
+                                            <pre><code><span class="comment"># RAG Implementation</span>
+<span class="python-import">from</span> <span class="builtin">deepseek</span> <span class="python-import">import</span> <span class="builtin">DeepSeekModel</span>
+<span class="python-import">from</span> <span class="builtin">vector_store</span> <span class="python-import">import</span> <span class="builtin">VectorDB</span>
+
+<span class="python-def">def</span> <span class="function">query_knowledge_base</span>(<span class="builtin">query</span>, <span class="builtin">context</span>):
+    <span class="comment"># Retrieve relevant documents</span>
+    <span class="builtin">docs</span> = <span class="builtin">vector_db</span>.<span class="function">similarity_search</span>(<span class="builtin">query</span>)
+    
+    <span class="comment"># Generate response with context</span>
+    <span class="builtin">response</span> = <span class="builtin">model</span>.<span class="function">generate</span>(
+        <span class="builtin">prompt</span>=<span class="builtin">query</span>,
+        <span class="builtin">context</span>=<span class="builtin">docs</span> + <span class="builtin">context</span>
+    )
+    
+    <span class="keyword">return</span> {
+        <span class="string">"answer"</span>: <span class="builtin">response</span>,
+        <span class="string">"sources"</span>: [<span class="builtin">doc</span>.<span class="builtin">metadata</span> <span class="keyword">for</span> <span class="builtin">doc</span> <span class="keyword">in</span> <span class="builtin">docs</span>]
+    }</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide" id="project2">
+                            <div class="project-slide-content">
+                                <div class="project-slide-info">
+                                    <div class="project-slide-header">
+                                        <div class="project-slide-icon">
+                                            <i class="fas fa-industry"></i>
+                                        </div>
+                                        <h3 class="project-slide-title" data-en="Manufacturing Defect Detection" data-zh="制造业缺陷检测">Manufacturing Defect Detection</h3>
+                                    </div>
+                                    <div class="project-slide-description" data-en="A real-time computer vision system that detects manufacturing defects with 98.7% accuracy. Implemented custom CNN architectures and data augmentation techniques to handle limited training data." data-zh="一个实时计算机视觉系统，可以98.7%的准确率检测制造缺陷。实现了自定义CNN架构和数据增强技术来处理有限的训练数据。">
+                                        A real-time computer vision system that detects manufacturing defects with 98.7% accuracy. Implemented custom CNN architectures and data augmentation techniques to handle limited training data.
+                                    </div>
+                                    <div class="project-slide-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">PyTorch</span>
+                                        <span class="tech-tag">Computer Vision</span>
+                                    </div>
+                                    <div class="project-slide-links">
+                                        <a href="https://github.com/yourusername/defect-detection" class="btn outline" target="_blank" data-en="View Project" data-zh="查看项目">View Project</a>
+                                    </div>
+                                </div>
+                                <div class="project-slide-visual">
+                                    <div class="project-visual-content">
+                                        <div class="code-snippet">
+                                            <pre><code><span class="python-class">class</span> <span class="function">DefectDetector</span>(<span class="builtin">nn</span>.<span class="builtin">Module</span>):
+    <span class="python-def">def</span> <span class="function">__init__</span>(<span class="builtin">self</span>):
+        <span class="builtin">super</span>(<span class="builtin">DefectDetector</span>, <span class="builtin">self</span>).<span class="function">__init__</span>()
+        <span class="builtin">self</span>.<span class="builtin">features</span> = <span class="builtin">nn</span>.<span class="function">Sequential</span>(
+            <span class="builtin">nn</span>.<span class="function">Conv2d</span>(<span class="number">3</span>, <span class="number">64</span>, <span class="builtin">kernel_size</span>=<span class="number">3</span>),
+            <span class="builtin">nn</span>.<span class="function">ReLU</span>(<span class="builtin">inplace</span>=<span class="builtin">True</span>),
+            <span class="builtin">nn</span>.<span class="function">MaxPool2d</span>(<span class="builtin">kernel_size</span>=<span class="number">2</span>),
+            <span class="builtin">nn</span>.<span class="function">Conv2d</span>(<span class="number">64</span>, <span class="number">128</span>, <span class="builtin">kernel_size</span>=<span class="number">3</span>),
+            <span class="builtin">nn</span>.<span class="function">ReLU</span>(<span class="builtin">inplace</span>=<span class="builtin">True</span>),
+            <span class="builtin">nn</span>.<span class="function">MaxPool2d</span>(<span class="builtin">kernel_size</span>=<span class="number">2</span>),
+        )
+        <span class="builtin">self</span>.<span class="builtin">classifier</span> = <span class="builtin">nn</span>.<span class="function">Sequential</span>(
+            <span class="builtin">nn</span>.<span class="function">Linear</span>(<span class="number">128</span> * <span class="number">54</span> * <span class="number">54</span>, <span class="number">512</span>),
+            <span class="builtin">nn</span>.<span class="function">ReLU</span>(<span class="builtin">inplace</span>=<span class="builtin">True</span>),
+            <span class="builtin">nn</span>.<span class="function">Dropout</span>(<span class="builtin">p</span>=<span class="number">0.5</span>),
+            <span class="builtin">nn</span>.<span class="function">Linear</span>(<span class="number">512</span>, <span class="number">2</span>),
+        )</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-slide" id="project3">
+                            <div class="project-slide-content">
+                                <div class="project-slide-info">
+                                    <div class="project-slide-header">
+                                        <div class="project-slide-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h3 class="project-slide-title" data-en="Economic Forecasting with GM(1,1)" data-zh="基于GM(1,1)的经济预测">Economic Forecasting with GM(1,1)</h3>
+                                    </div>
+                                    <div class="project-slide-description" data-en="Implementation of the GM(1,1) gray prediction model for manufacturing income forecasting. The model achieves a mean absolute percentage error of less than 3% on historical data." data-zh="实现GM(1,1)灰色预测模型用于制造业收入预测。该模型在历史数据上实现了小于3%的平均绝对百分比误差。">
+                                        Implementation of the GM(1,1) gray prediction model for manufacturing income forecasting. The model achieves a mean absolute percentage error of less than 3% on historical data.
+                                    </div>
+                                    <div class="project-slide-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Time Series</span>
+                                        <span class="tech-tag">Economic Modeling</span>
+                                    </div>
+                                    <div class="project-slide-links">
+                                        <a href="https://github.com/yourusername/gm11-forecasting" class="btn outline" target="_blank" data-en="View Project" data-zh="查看项目">View Project</a>
+                                    </div>
+                                </div>
+                                <div class="project-slide-visual">
+                                    <div class="project-visual-content">
+                                        <div class="code-snippet">
+                                            <pre><code><span class="python-def">def</span> <span class="function">gm11_forecast</span>(<span class="builtin">x0</span>, <span class="builtin">n</span>):
+    <span class="python-docstring">"""
+    GM(1,1) forecasting model
+    x0: Original sequence
+    n: Number of points to predict
+    """</span>
+    <span class="builtin">x1</span> = <span class="builtin">np</span>.<span class="function">cumsum</span>(<span class="builtin">x0</span>)
+    <span class="builtin">z1</span> = <span class="number">0.5</span> <span class="operator">*</span> (<span class="builtin">x1</span>[<span class="operator">:-</span><span class="number">1</span>] <span class="operator">+</span> <span class="builtin">x1</span>[<span class="number">1</span>:])
+    
+    <span class="builtin">B</span> = <span class="builtin">np</span>.<span class="function">vstack</span>([<span class="operator">-</span><span class="builtin">z1</span>, <span class="builtin">np</span>.<span class="function">ones_like</span>(<span class="builtin">z1</span>)]).<span class="builtin">T</span>
+    <span class="builtin">Y</span> = <span class="builtin">x0</span>[<span class="number">1</span>:].<span class="function">reshape</span>((<span class="operator">-</span><span class="number">1</span>, <span class="number">1</span>))
+    
+    <span class="comment"># Solve for a, b using least squares</span>
+    [[<span class="builtin">a</span>], [<span class="builtin">b</span>]] = <span class="builtin">np</span>.<span class="function">linalg</span>.<span class="function">inv</span>(<span class="builtin">B</span>.<span class="builtin">T</span> <span class="operator">@</span> <span class="builtin">B</span>) <span class="operator">@</span> <span class="builtin">B</span>.<span class="builtin">T</span> <span class="operator">@</span> <span class="builtin">Y</span>
+    
+    <span class="comment"># Forecast future values</span>
+    <span class="builtin">x_pred</span> = [(<span class="builtin">x0</span>[<span class="number">0</span>] <span class="operator">-</span> <span class="builtin">b</span>/<span class="builtin">a</span>) <span class="operator">*</span> <span class="builtin">np</span>.<span class="function">exp</span>(<span class="operator">-</span><span class="builtin">a</span> <span class="operator">*</span> (<span class="builtin">i</span>)) <span class="operator">+</span> <span class="builtin">b</span>/<span class="builtin">a</span> 
+              <span class="keyword">for</span> <span class="builtin">i</span> <span class="keyword">in</span> <span class="function">range</span>(<span class="function">len</span>(<span class="builtin">x0</span>) <span class="operator">+</span> <span class="builtin">n</span>)]
+    
+    <span class="keyword">return</span> <span class="builtin">x_pred</span></code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 项目轮播导航 -->
+                    <div class="project-carousel-nav">
+                        <button class="carousel-nav-btn active" data-project="project1">
+                            <span data-en="DeepSeek RAG" data-zh="DeepSeek RAG">DeepSeek RAG</span>
+                        </button>
+                        <button class="carousel-nav-btn" data-project="project2">
+                            <span data-en="Defect Detection" data-zh="缺陷检测">Defect Detection</span>
+                        </button>
+                        <button class="carousel-nav-btn" data-project="project3">
+                            <span data-en="Economic Forecasting" data-zh="经济预测">Economic Forecasting</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="see-more">
+                    <a href="https://github.com/yourusername" class="btn primary" target="_blank" data-en="See More Projects" data-zh="查看更多项目">See More Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title" data-en="Contact" data-zh="联系方式">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p data-en="Interested in my work or have collaboration opportunities? Feel free to contact me!" data-zh="对我的工作感兴趣或有合作机会？随时联系我！">Interested in my work or have collaboration opportunities? Feel free to contact me!</p>
+                    <div class="social-links">
+                        <a href="https://github.com/jamsylph" class="social-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/jamsylph" class="social-link" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:your-email@example.com" class="social-link"><i class="fas fa-envelope"></i> <span data-en="Email (Coming Soon)" data-zh="邮箱 (即将添加)">Email (Coming Soon)</span></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="cosmic-form">
+                        <h3 data-en="Send a Message" data-zh="发送消息">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-en="Name" data-zh="姓名">Name</label>
+                                <input type="text" id="name" class="cosmic-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" data-en="Email" data-zh="邮箱">Email</label>
+                                <input type="email" id="email" class="cosmic-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" data-en="Subject" data-zh="主题">Subject</label>
+                                <input type="text" id="subject" class="cosmic-input" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" data-en="Message" data-zh="消息">Message</label>
+                                <textarea id="message" class="cosmic-input" rows="4" required></textarea>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn primary submit-btn">
+                                <span data-en="Send Message" data-zh="发送消息">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#" data-en="Home" data-zh="主页">Home</a>
+            <a href="#about" data-en="About" data-zh="关于">About</a>
+            <a href="#core-strengths" data-en="Core Strengths" data-zh="核心优势">Core Strengths</a>
+            <a href="#portfolio" data-en="Portfolio" data-zh="作品集">Portfolio</a>
+            <a href="#skills" data-en="Skills" data-zh="技能">Skills</a>
+            <a href="#projects" data-en="Projects" data-zh="项目">Projects</a>
+            <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+        </div>
+        <div class="copyright">
+            © <span id="year">2024</span> JamSylph. <span data-en="All Rights Reserved." data-zh="保留所有权利。">All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <iframe src="knowledge-tree.html" style="width: 100%; height: 800px; border: none;"></iframe>
+</body>
+</html> 
